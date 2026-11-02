@@ -1,0 +1,9 @@
+Dataset: 3DBAG
+Download date: 2026-07-22
+Area: Fryslân
+Selection: provincial bounding box EPSG:28992
+Format: GeoPackage
+Source endpoint: https://data.3dbag.nl/latest/tile_index.fgb
+Script: 3DBAG/3dbag-scripts tile_download.py
+File	SHA-256	Format	Size	Version
+3dbag_nl.gpkg.zip	421265c55361ea7593074bf37d0195d7406efe77fd75290cb44403d7c7bd5d29	GPKG 	19 GB (111 GB uncompressed)	v2025.09.03
