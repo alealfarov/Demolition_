@@ -38,4 +38,4 @@ For databases hosted elsewhere, use the appropriate reachable hostname.
 
 ## Research
 
-MSc GIMA thesis — historical building demolition patterns in Fryslan, 2011–2025.
+MSc GIMA thesis  historical building demolition patterns in Fryslan, 2011–2025.
