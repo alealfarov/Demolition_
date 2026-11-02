@@ -1,4 +1,4 @@
-﻿# BAG Demolition Explorer — Fryslan
+﻿# BAG Demolition Explorer Fryslan
 
 Interactive Streamlit application for exploring historical BAG building demolition patterns in Fryslan (2011–2025).
 
