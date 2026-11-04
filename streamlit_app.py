@@ -16,6 +16,7 @@ import plotly.graph_objects as go
 import pydeck as pdk
 import requests
 import streamlit as st
+from figure_exports import download_chart_html
 import streamlit.components.v1 as components
 from sqlalchemy import create_engine, text
 from sqlalchemy.exc import ProgrammingError
@@ -291,12 +292,16 @@ def render_plotly_chart(figure, *args, **kwargs):
             **supplied_config["toImageButtonOptions"],
         }
 
-    return _STREAMLIT_PLOTLY_CHART(
+    import inspect
+    caller_line = inspect.currentframe().f_back.f_lineno
+    result = _STREAMLIT_PLOTLY_CHART(
         figure,
         *args,
         config=merged_config,
         **kwargs,
     )
+    download_chart_html(figure, chart_number=caller_line)
+    return result
 
 
 st.title("BAG Demolition Explorer · Fryslân")
